@@ -184,7 +184,7 @@
         <!-- Raipur City Tag -->
         <div
           class="inline-flex items-center gap-2 bg-white/90 border border-orange-200 text-brand-orange px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm mb-4">
-          <span>📍 Marine Drive & VIP Road, Raipur</span>
+          <span>📍 Kota, Raipur</span>
         </div>
 
         <!-- Catchy Main Headline -->
@@ -321,7 +321,8 @@
           </div>
           <h3 class="text-2xl font-extrabold text-stone-900 mb-2">RAW & REAL Juice Bar</h3>
           <p class="text-sm text-stone-600 font-medium mb-4 leading-relaxed">
-            Main Food Square, Marine Drive / Telibandha Talab Area, Raipur, Chhattisgarh - 492001.
+            H.NO.- 2235, W23, VEER SHIVAJI, IFO DISHA COLLEGE, RAW AND REAL, Kota Rd, RAMNAGAR, Raipur, Chhattisgarh
+            492001.
           </p>
 
           <div class="space-y-2 mb-6 text-xs sm:text-sm font-semibold text-stone-700">
@@ -497,9 +498,9 @@
   <!-- 8. SELECT ITEM PROMPT DIALOG (THEME MATCHED)                 -->
   <!-- ============================================================ -->
   <div id="select-item-dialog-backdrop" onclick="toggleSelectItemDialog(false)"
-    class="fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    class="hidden fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
     <div id="select-item-dialog"
-      class="bg-[#FFFDF9] border border-amber-200/90 rounded-3xl p-6 sm:p-8 max-w-sm w-full shadow-float text-center relative transform scale-95 transition-all duration-300 pointer-events-auto"
+      class="bg-[#FFFDF9] border border-amber-200/90 rounded-3xl p-6 sm:p-8 max-w-sm w-full shadow-float text-center relative transform scale-95 transition-all duration-300"
       onclick="event.stopPropagation()">
 
       <!-- Close Button -->
@@ -973,13 +974,19 @@ _Sent from Raw & Real Web Menu_`;
       const dialog = document.getElementById("select-item-dialog");
 
       if (open) {
-        backdrop.classList.remove("opacity-0", "pointer-events-none");
-        dialog.classList.remove("scale-95");
-        dialog.classList.add("scale-100");
+        backdrop.classList.remove("hidden");
+        requestAnimationFrame(() => {
+          backdrop.classList.remove("opacity-0");
+          dialog.classList.remove("scale-95");
+          dialog.classList.add("scale-100");
+        });
       } else {
-        backdrop.classList.add("opacity-0", "pointer-events-none");
+        backdrop.classList.add("opacity-0");
         dialog.classList.remove("scale-100");
         dialog.classList.add("scale-95");
+        setTimeout(() => {
+          backdrop.classList.add("hidden");
+        }, 300);
       }
     }
 
