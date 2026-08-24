@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>RAW & REAL | Fresh Juices, Shakes & Salads • Raipur</title>
+  <meta name="description"
+    content="100% Pure, Fresh & Uncut Goodness in Raipur. Cold-pressed juices, thick shakes, fruit & protein salads with 100% RO ice and zero preservatives." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#EA580C',
+              'orange-dark': '#C2410C',
+              peach: '#FB923C',
+              cream: '#FFFDF9',
+              'cream-dark': '#FFF7ED',
+              sand: '#FDF4E7',
+            },
+            whatsapp: {
+              DEFAULT: '#25D366',
+              dark: '#1EBE5D',
+              light: '#DCFCE7'
+            }
+          },
+          boxShadow: {
+            'organic': '0 10px 30px -5px rgba(0,0,0,0.04), 0 4px 12px -2px rgba(0,0,0,0.02)',
+            'organic-hover': '0 20px 35px -8px rgba(234,88,12,0.08), 0 8px 16px -4px rgba(0,0,0,0.03)',
+            'float': '0 20px 40px -10px rgba(0,0,0,0.12)',
+            'sheet': '0 -15px 35px rgba(0,0,0,0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom organic styling & scrollbar ergonomics */
+    body {
+      background: linear-gradient(180deg, #FFFDF9 0%, #FFF8EE 40%, #FFFDF9 100%);
+      color: #1C1917;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Glassmorphism token */
+    .glass-nav {
+      background: rgba(255, 253, 249, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(234, 88, 12, 0.08);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Animated pulse dot */
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+    }
+
+    .pulse-dot::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: inherit;
+      animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen text-stone-800 pb-32">
+
+  <!-- ============================================================ -->
+  <!-- 1. STICKY HEADER                                             -->
+  <!-- ============================================================ -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+
+      <!-- Brand Logo & Live Badge -->
+      <a href="#" class="flex items-center gap-2.5 group">
+        <div
+          class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center shadow-md shadow-orange-500/20 text-white text-xl font-extrabold transform group-hover:scale-105 transition-transform">
+          🍊
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg sm:text-xl tracking-tight text-stone-900 leading-none">RAW & REAL</span>
+          </div>
+          <div class="flex items-center gap-1.5 mt-0.5">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-700 tracking-wide">Open Now • Raipur</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Quick Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Call Button -->
+        <a href="tel:+917999752252"
+          class="flex items-center gap-1.5 text-stone-600 hover:text-stone-900 bg-stone-100/80 hover:bg-stone-200/80 px-3 py-2 rounded-2xl text-xs sm:text-sm font-semibold transition-colors">
+          <svg class="w-4 h-4 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          <span class="hidden sm:inline">Call Shop</span>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button onclick="toggleCartDrawer(true)"
+          class="relative flex items-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-bold shadow-md shadow-orange-500/25 transition-all transform active:scale-95">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="hidden xs:inline font-bold">Cart</span>
+          <span id="header-cart-badge"
+            class="bg-white text-brand-orange text-xs font-extrabold px-2 py-0.5 rounded-full shadow-inner">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- 2. HIGH-CONVERSION HERO SECTION                              -->
+  <!-- ============================================================ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-6 sm:pb-8">
+    <div
+      class="bg-gradient-to-br from-amber-100/60 via-orange-50/50 to-pink-100/40 border border-amber-200/50 rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-organic">
+
+      <!-- Decorative Backdrop Circles -->
+      <div class="absolute -top-16 -right-16 w-56 h-56 bg-orange-300/20 rounded-full blur-2xl pointer-events-none">
+      </div>
+      <div class="absolute -bottom-16 -left-16 w-56 h-56 bg-pink-300/20 rounded-full blur-2xl pointer-events-none">
+      </div>
+
+      <div class="relative z-10 max-w-2xl">
+        <!-- Raipur City Tag -->
+        <div
+          class="inline-flex items-center gap-2 bg-white/90 border border-orange-200 text-brand-orange px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-sm mb-4">
+          <span>📍 Marine Drive & VIP Road, Raipur</span>
+        </div>
+
+        <!-- Catchy Main Headline -->
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-stone-900 leading-[1.15] mb-3">
+          100% Pure, Fresh & <br class="hidden sm:block" />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-rose-600">Uncut
+            Goodness.</span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="text-sm sm:text-base text-stone-600 font-medium leading-relaxed mb-6">
+          No artificial syrup, no preservatives. Squeezed fresh from daily mandi stock using 100% RO ice. Experience
+          genuine nourishment right here in Raipur.
+        </p>
+
+        <!-- 4 Hygiene & Trust Badges -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mb-6">
+          <div class="flex items-center gap-2 bg-white/80 border border-stone-200/60 rounded-2xl px-3 py-2 shadow-xs">
+            <span class="text-base">🧊</span>
+            <span class="text-xs font-bold text-stone-700">100% RO Ice</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 border border-stone-200/60 rounded-2xl px-3 py-2 shadow-xs">
+            <span class="text-base">🍃</span>
+            <span class="text-xs font-bold text-stone-700">Pure Fruits</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 border border-stone-200/60 rounded-2xl px-3 py-2 shadow-xs">
+            <span class="text-base">⚡</span>
+            <span class="text-xs font-bold text-stone-700">Cold Pressed</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 border border-stone-200/60 rounded-2xl px-3 py-2 shadow-xs">
+            <span class="text-base">⏱️</span>
+            <span class="text-xs font-bold text-stone-700">5-Min Prep</span>
+          </div>
+        </div>
+
+        <!-- Dual CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#menu-tabs"
+            class="inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-white font-bold px-5 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm shadow-md transition-transform active:scale-95">
+            <span>Explore 5 Categories</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+          <button onclick="handleHeroWhatsAppClick()"
+            class="inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-dark text-white font-bold px-5 sm:px-6 py-3 rounded-2xl text-xs sm:text-sm shadow-md shadow-emerald-500/20 transition-transform active:scale-95">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.942.822 2.791.822h.005c3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.768-5.773-5.773zm3.376 8.162c-.145.408-.847.77-1.189.818-.328.046-.749.066-2.18-.528-1.579-.654-2.617-2.26-2.697-2.366-.079-.106-.645-.858-.645-1.637 0-.778.408-1.161.553-1.32.145-.158.316-.198.421-.198.106 0 .211.001.303.006.097.004.227-.037.355.271.132.316.448 1.091.488 1.17.04.079.066.171.013.276-.053.106-.079.171-.158.263-.079.092-.167.206-.238.277-.079.079-.161.165-.069.323.092.158.408.673.875 1.089.601.535 1.108.701 1.266.78.158.079.25.066.342-.04.092-.106.395-.461.5-.619.106-.158.211-.132.355-.079.145.053.921.434 1.079.513.158.079.263.118.303.184.039.066.039.382-.106.79z" />
+            </svg>
+            <span>⚡ Order on WhatsApp</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. SEARCH & CATEGORY TABS (DRIBBBLE STYLE)                   -->
+  <!-- ============================================================ -->
+  <section id="menu-tabs"
+    class="sticky top-16 sm:top-20 z-30 bg-[#FFFDF9]/95 backdrop-blur-md pt-3 pb-3 border-y border-stone-200/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+      <!-- Search Input -->
+      <div class="relative mb-3">
+        <input type="text" id="search-input" oninput="handleSearch(this.value)"
+          placeholder="Search ABC juice, Nutella shake, exotic fruit salad..."
+          class="w-full bg-white border border-stone-200/80 rounded-2xl py-2.5 pl-10 pr-4 text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-orange/40 shadow-xs placeholder:text-stone-400" />
+        <svg class="w-4 h-4 text-stone-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+
+      <!-- Category Filter Pills (Horizontal Scroll on Mobile) -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="category-pills">
+        <!-- Injected dynamically by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. DYNAMIC MENU GRID                                         -->
+  <!-- ============================================================ -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-6">
+
+    <!-- Section Title & Item Count Indicator -->
+    <div class="flex items-center justify-between mb-4">
+      <div>
+        <h2 id="active-category-title" class="text-xl sm:text-2xl font-extrabold text-stone-900 tracking-tight">
+          All Offerings
+        </h2>
+        <p id="active-category-desc" class="text-xs sm:text-sm text-stone-500 font-medium">
+          Freshly prepared on-demand in Raipur
+        </p>
+      </div>
+      <span id="items-counter" class="text-xs font-bold bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full">
+        40 Items
+      </span>
+    </div>
+
+    <!-- Product Grid: 2-col on Mobile, 3-4 col on Desktop -->
+    <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
+      <!-- Injected dynamically via JS -->
+    </div>
+
+    <!-- Empty State Container -->
+    <div id="empty-state" class="hidden text-center py-16 px-4">
+      <div class="text-4xl mb-3">🔍</div>
+      <h3 class="text-base font-bold text-stone-800 mb-1">No items found</h3>
+      <p class="text-xs text-stone-500 mb-4">Try searching for something else like "Mango", "Mojito", or "Sprouts".</p>
+      <button onclick="resetFilters()" class="text-xs font-bold text-brand-orange underline">Reset All Filters</button>
+    </div>
+
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- 5. LOCATION & GOOGLE MAPS SECTION                            -->
+  <!-- ============================================================ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-16">
+    <div
+      class="bg-gradient-to-br from-white to-stone-50 border border-stone-200/80 rounded-3xl p-6 sm:p-8 shadow-organic">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+        <!-- Left: Address Details -->
+        <div>
+          <div
+            class="inline-flex items-center gap-2 text-brand-orange bg-orange-50 border border-orange-100 px-3 py-1 rounded-full text-xs font-bold mb-3">
+            <span>📍 Visit Our Raipur Outlet</span>
+          </div>
+          <h3 class="text-2xl font-extrabold text-stone-900 mb-2">RAW & REAL Juice Bar</h3>
+          <p class="text-sm text-stone-600 font-medium mb-4 leading-relaxed">
+            Main Food Square, Marine Drive / Telibandha Talab Area, Raipur, Chhattisgarh - 492001.
+          </p>
+
+          <div class="space-y-2 mb-6 text-xs sm:text-sm font-semibold text-stone-700">
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-600 font-bold">⏰ Timings:</span>
+              <span>8:00 AM – 10:30 PM (Mon – Sun)</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-orange-600 font-bold">📞 Support:</span>
+              <a href="tel:+917999752252" class="underline">+91 79997 52252</a>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="https://maps.app.goo.gl/So6n6C9E5EzBaEwc7" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white font-bold px-4 py-2.5 rounded-2xl text-xs sm:text-sm shadow-sm transition-transform active:scale-95">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Get Directions on Google Maps</span>
+            </a>
+
+            <a href="https://g.page/r/CazqDK6q_vQ0EAI/review" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200 font-bold px-4 py-2.5 rounded-2xl text-xs sm:text-sm transition-colors">
+              <span>⭐ Rate Us 5 Stars</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Hygiene Statement & City Promise -->
+        <div class="bg-amber-100/40 border border-amber-200/60 rounded-2xl p-5 sm:p-6 text-stone-800">
+          <h4 class="text-base font-bold text-stone-900 mb-2 flex items-center gap-2">
+            <span>🛡️</span> Raipur's Cleanliness Benchmark
+          </h4>
+          <p class="text-xs sm:text-sm text-stone-600 font-medium leading-relaxed mb-3">
+            We triple-rinse every fruit with pure RO filtered water. No pre-cut oxidation, no artificial flavoring
+            essences. Your juices and shakes are made right in front of your eyes.
+          </p>
+          <div class="flex items-center gap-4 text-xs font-bold text-stone-500">
+            <span>✓ 100% RO Washed</span>
+            <span>✓ Sanitized Steel Cutters</span>
+            <span>✓ Fresh Milk</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. STICKY FLOATING CART BAR (MOBILE & DESKTOP)               -->
+  <!-- ============================================================ -->
+  <div id="floating-cart-bar"
+    class="fixed bottom-4 left-4 right-4 max-w-xl mx-auto z-40 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none">
+    <div
+      class="bg-stone-900 text-white rounded-3xl p-3.5 sm:p-4 shadow-float border border-stone-700/60 flex items-center justify-between pointer-events-auto">
+      <div class="flex items-center gap-3 pl-1">
+        <div
+          class="w-10 h-10 rounded-2xl bg-brand-orange flex items-center justify-center font-extrabold text-sm text-white">
+          <span id="floating-cart-count">0</span>
+        </div>
+        <div>
+          <div class="text-[11px] font-medium text-stone-400 leading-tight uppercase tracking-wider">Your Selection
+          </div>
+          <div class="text-base sm:text-lg font-extrabold text-white" id="floating-cart-total">₹0</div>
+        </div>
+      </div>
+
+      <button onclick="toggleCartDrawer(true)"
+        class="flex items-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold px-4 sm:px-5 py-2.5 rounded-2xl text-xs sm:text-sm shadow-md transition-all active:scale-95">
+        <span>Review Order</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 7. CART DRAWER / ORDER MODAL (WHATSAPP INTEGRATION)          -->
+  <!-- ============================================================ -->
+  <div id="cart-drawer-backdrop" onclick="toggleCartDrawer(false)"
+    class="fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  </div>
+
+  <div id="cart-drawer"
+    class="fixed bottom-0 right-0 max-w-lg w-full bg-[#FFFDF9] rounded-t-[32px] sm:rounded-l-[32px] sm:rounded-tr-none z-50 transform translate-y-full sm:translate-y-0 sm:translate-x-full transition-transform duration-300 shadow-sheet max-h-[90vh] sm:h-full flex flex-col">
+
+    <!-- Drawer Header -->
+    <div class="p-5 sm:p-6 border-b border-stone-200/70 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🍹</span>
+        <h3 class="text-lg sm:text-xl font-extrabold text-stone-900">Your Fresh Order</h3>
+      </div>
+      <button onclick="toggleCartDrawer(false)"
+        class="w-8 h-8 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center text-stone-500 font-bold">
+        ✕
+      </button>
+    </div>
+
+    <!-- Drawer Items List -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-3.5">
+      <!-- Injected dynamically via JS -->
+    </div>
+
+    <!-- Drawer Order Details & Customization -->
+    <div class="p-5 sm:p-6 border-t border-stone-200/70 bg-stone-50/50 space-y-4">
+
+      <!-- Order Type Selector -->
+      <div>
+        <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-2">Order Type</label>
+        <div class="grid grid-cols-3 gap-2">
+          <button type="button" onclick="setOrderType('Takeaway')" id="type-takeaway"
+            class="order-type-btn py-2 text-xs font-bold rounded-xl border border-brand-orange bg-brand-orange text-white shadow-xs">
+            📦 Takeaway
+          </button>
+          <button type="button" onclick="setOrderType('Dine-in')" id="type-dinein"
+            class="order-type-btn py-2 text-xs font-bold rounded-xl border border-stone-200 bg-white text-stone-700 hover:bg-stone-100">
+            🪑 Dine-in
+          </button>
+          <button type="button" onclick="setOrderType('Stall Pickup')" id="type-pickup"
+            class="order-type-btn py-2 text-xs font-bold rounded-xl border border-stone-200 bg-white text-stone-700 hover:bg-stone-100">
+            🛵 Pickup
+          </button>
+        </div>
+      </div>
+
+      <!-- Special Instructions -->
+      <div>
+        <label class="block text-xs font-bold text-stone-700 uppercase tracking-wider mb-1">Special Notes
+          (Optional)</label>
+        <input type="text" id="order-notes" placeholder="e.g., Less ice, no added sugar, extra lemon..."
+          class="w-full bg-white border border-stone-200 rounded-xl px-3 py-2 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-brand-orange/40" />
+      </div>
+
+      <!-- Price Breakdown -->
+      <div class="space-y-1.5 text-xs text-stone-600 font-medium">
+        <div class="flex justify-between">
+          <span>Items Total:</span>
+          <span class="font-bold text-stone-900" id="drawer-subtotal">₹0</span>
+        </div>
+        <div class="flex justify-between text-emerald-700">
+          <span>Packaging & Preparation:</span>
+          <span class="font-bold">FREE (₹0)</span>
+        </div>
+        <div class="flex justify-between text-sm font-extrabold text-stone-900 pt-2 border-t border-stone-200">
+          <span>Grand Total:</span>
+          <span class="text-brand-orange text-base" id="drawer-grandtotal">₹0</span>
+        </div>
+      </div>
+
+      <!-- WhatsApp Checkout Button -->
+      <button id="btn-whatsapp-checkout" onclick="sendWhatsAppOrder()"
+        class="w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-extrabold py-3.5 px-4 rounded-2xl text-sm shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2 transition-all transform active:scale-95">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path
+            d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.942.822 2.791.822h.005c3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.768-5.773-5.768zm3.376 8.162c-.145.408-.847.77-1.189.818-.328.046-.749.066-2.18-.528-1.579-.654-2.617-2.26-2.697-2.366-.079-.106-.645-.858-.645-1.637 0-.778.408-1.161.553-1.32.145-.158.316-.198.421-.198.106 0 .211.001.303.006.097.004.227-.037.355.271.132.316.448 1.091.488 1.17.04.079.066.171.013.276-.053.106-.079.171-.158.263-.079.092-.167.206-.238.277-.079.079-.161.165-.069.323.092.158.408.673.875 1.089.601.535 1.108.701 1.266.78.158.079.25.066.342-.04.092-.106.395-.461.5-.619.106-.158.211-.132.355-.079.145.053.921.434 1.079.513.158.079.263.118.303.184.039.066.039.382-.106.79z" />
+        </svg>
+        <span>Send Order to Shop WhatsApp</span>
+      </button>
+
+      <p class="text-[10px] text-center text-stone-400 font-medium">
+        Redirects directly to WhatsApp chat with itemized list formatted.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 8. SELECT ITEM PROMPT DIALOG (THEME MATCHED)                 -->
+  <!-- ============================================================ -->
+  <div id="select-item-dialog-backdrop" onclick="toggleSelectItemDialog(false)"
+    class="fixed inset-0 bg-stone-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div id="select-item-dialog"
+      class="bg-[#FFFDF9] border border-amber-200/90 rounded-3xl p-6 sm:p-8 max-w-sm w-full shadow-float text-center relative transform scale-95 transition-all duration-300 pointer-events-auto"
+      onclick="event.stopPropagation()">
+
+      <!-- Close Button -->
+      <button onclick="toggleSelectItemDialog(false)"
+        class="absolute top-4 right-4 w-8 h-8 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center text-stone-500 font-bold transition-colors">
+        ✕
+      </button>
+
+      <!-- Decorative Fruit Container -->
+      <div
+        class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-tr from-amber-100 via-orange-100 to-rose-100 border border-orange-200/80 flex items-center justify-center text-3xl shadow-xs">
+        🍹
+      </div>
+
+      <!-- Heading & Explanation -->
+      <h3 class="text-lg sm:text-xl font-extrabold text-stone-900 mb-2 leading-snug">
+        First select any item from the menu
+      </h3>
+      <p class="text-xs sm:text-sm text-stone-500 font-medium leading-relaxed mb-6">
+        Pick your favorite juices, thick shakes, or salads so we can customize your order and prepare it fresh!
+      </p>
+
+      <!-- Primary Action: See Menu -->
+      <button onclick="scrollToMenuFromDialog()"
+        class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-extrabold py-3.5 px-6 rounded-2xl text-xs sm:text-sm shadow-md shadow-orange-500/20 flex items-center justify-center gap-2 transition-all transform active:scale-95">
+        <span>See Menu</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. TOAST NOTIFICATION MICRO-INTERACTION                      -->
+  <!-- ============================================================ -->
+  <div id="toast"
+    class="fixed top-5 left-1/2 transform -translate-x-1/2 -translate-y-20 opacity-0 z-50 transition-all duration-300 pointer-events-none">
+    <div
+      class="bg-stone-900 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-full shadow-float flex items-center gap-2 border border-stone-700">
+      <span id="toast-icon">✨</span>
+      <span id="toast-message">Item updated</span>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- 9. JAVASCRIPT LOGIC & STATE ENGINE                           -->
+  <!-- ============================================================ -->
+  <script>
+    // ------------------------------------------------------------
+    // CONFIGURATION & PHONE NUMBER
+    // ------------------------------------------------------------
+    const WHATSAPP_PHONE = "917999752252"; // Official WhatsApp Order Number
+
+    // ------------------------------------------------------------
+    // CATEGORY DESIGN TOKENS
+    // ------------------------------------------------------------
+    const CATEGORIES = [
+      { id: "all", name: "All Offerings", emoji: "✨", badgeBg: "#F5F5F4", badgeText: "#44403C", border: "#E7E5E4" },
+      { id: "shakes", name: "Shakes", emoji: "🥤", badgeBg: "#FCE7F3", badgeText: "#BE185D", border: "#FBCFE8" },
+      { id: "fruit_salads", name: "Fruit Salads", emoji: "🍉", badgeBg: "#FFEDD5", badgeText: "#C2410C", border: "#FED7AA" },
+      { id: "veggie_salads", name: "Veggie & Protein", emoji: "🥗", badgeBg: "#DCFCE7", badgeText: "#15803D", border: "#BBF7D0" },
+      { id: "fresh_juices", name: "Fresh Juices", emoji: "🍊", badgeBg: "#FEF3C7", badgeText: "#B45309", border: "#FDE68A" },
+      { id: "coolers", name: "Coolers", emoji: "🧊", badgeBg: "#E0F2FE", badgeText: "#0369A1", border: "#BAE6FD" }
+    ];
+
+    // ------------------------------------------------------------
+    // COMPLETE MENU DATA (ALL 40 EXACT ITEMS)
+    // ------------------------------------------------------------
+    const MENU_DATA = [
+      // 01. SHAKES (12 Items)
+      { id: "s1", name: "Oreo Milkshake", category: "shakes", price: 120, desc: "Thick crushed Oreo, rich cream & chocolate drizzle", icon: "🍪", tag: "Bestseller" },
+      { id: "s2", name: "KitKat Milkshake", category: "shakes", price: 130, desc: "Crispy wafer blend, chocolate ganache & dairy milk", icon: "🍫", tag: "Popular" },
+      { id: "s3", name: "Nutella Shake", category: "shakes", price: 150, desc: "Pure hazelnut cocoa spread blended with chilled milk", icon: "🌰", tag: "Chef Special" },
+      { id: "s4", name: "Mango Shake", category: "shakes", price: 120, desc: "Fresh pulp of Alphonso mangoes & rich creamy milk", icon: "🥭", tag: "Seasonal Favorite" },
+      { id: "s5", name: "Chocolate Milkshake", category: "shakes", price: 110, desc: "Classic Belgian chocolate shake with chocolate flakes", icon: "🍫", tag: "Classic" },
+      { id: "s6", name: "Banana Peanut Butter Shake", category: "shakes", price: 140, desc: "High-protein roasted peanut butter & ripe banana", icon: "🍌", tag: "High Protein" },
+      { id: "s7", name: "Cold Coffee Shake", category: "shakes", price: 110, desc: "Rich roasted espresso shot whipped with cold dairy", icon: "☕", tag: "Energy" },
+      { id: "s8", name: "Brownie Milkshake", category: "shakes", price: 150, desc: "Baked fudge brownie blended into thick chocolate shake", icon: "🍰", tag: "Indulgent" },
+      { id: "s9", name: "Dry Fruit Milkshake", category: "shakes", price: 160, desc: "Almonds, cashews, pistachios, dates & saffron", icon: "🥜", tag: "Premium Royal" },
+      { id: "s10", name: "Ferrero Rocher Shake", category: "shakes", price: 180, desc: "Whole Ferrero Rocher, hazelnut cream & wafer crumbs", icon: "✨", tag: "Signature" },
+      { id: "s11", name: "Lotus Biscoff Shake", category: "shakes", price: 170, desc: "Caramelized speculoos cookie spread & biscuit crumble", icon: "🍪", tag: "Trending" },
+      { id: "s12", name: "Badam Milkshake", category: "shakes", price: 130, desc: "Traditional crushed almond milk with cardamom aroma", icon: "🥛", tag: "Traditional" },
+
+      // 02. FRUIT SALADS (8 Items)
+      { id: "fs1", name: "Classic Mixed Fruit Salad", category: "fruit_salads", price: 90, desc: "Apple, banana, papaya, pomegranate, watermelon", icon: "🍎", tag: "Daily Essential" },
+      { id: "fs2", name: "Dry Fruit & Fresh Fruit Salad", category: "fruit_salads", price: 140, desc: "Assorted fruits topped with roasted almonds & cashews", icon: "🍇", tag: "Rich & Loaded" },
+      { id: "fs3", name: "Fruit Chaat", category: "fruit_salads", price: 90, desc: "Tangy spiced seasonal fruits with rock salt & lemon juice", icon: "🌶️", tag: "Spicy & Tangy" },
+      { id: "fs4", name: "Honey Lime Fruit Salad", category: "fruit_salads", price: 110, desc: "Fresh cut fruits glazed with organic honey & fresh lime", icon: "🍯", tag: "Immunity" },
+      { id: "fs5", name: "Yogurt Fruit Salad", category: "fruit_salads", price: 120, desc: "Creamy Greek curd tossed with juicy seasonal fruits", icon: "🥣", tag: "Probiotic" },
+      { id: "fs6", name: "Exotic Fruit Salad", category: "fruit_salads", price: 150, desc: "Kiwi, dragon fruit, blueberries, orange & sweet pears", icon: "🥝", tag: "Exotic Superfood" },
+      { id: "fs7", name: "Tropical Fruit Salad", category: "fruit_salads", price: 130, desc: "Pineapple, sweet melon, mango chunks & passion fruit", icon: "🍍", tag: "Hydrating" },
+      { id: "fs8", name: "Sprout Fruit Salad", category: "fruit_salads", price: 110, desc: "Crunchy moong sprouts paired with sweet fruit medley", icon: "🌱", tag: "Fiber Rich" },
+
+      // 03. VEGGIE & PROTEIN SALADS (7 Items)
+      { id: "vs1", name: "Sprouts Salad", category: "veggie_salads", price: 90, desc: "Organic sprouted moong, tomatoes, cucumber & lemon herb", icon: "🥗", tag: "Low Calorie" },
+      { id: "vs2", name: "Protein Veg Salad", category: "veggie_salads", price: 130, desc: "Paneer cubes, chickpeas, tofu, bell peppers & greens", icon: "🧀", tag: "Gym Favorite" },
+      { id: "vs3", name: "Corn & Veg Salad", category: "veggie_salads", price: 100, desc: "Sweet golden corn, diced capsicum, onions & herb dressing", icon: "🌽", tag: "Crunchy" },
+      { id: "vs4", name: "Garden Fresh Salad", category: "veggie_salads", price: 80, desc: "Crisp lettuce, cucumber, carrots, beetroots & cherry tomato", icon: "🥕", tag: "Detox" },
+      { id: "vs5", name: "Greek Salad", category: "veggie_salads", price: 140, desc: "Feta cheese, black olives, bell pepper, cucumber & olive oil", icon: "🫒", tag: "Gourmet" },
+      { id: "vs6", name: "Coleslaw Salad", category: "veggie_salads", price: 110, desc: "Finely shredded cabbage, carrots & light creamy dressing", icon: "🥬", tag: "Creamy" },
+      { id: "vs7", name: "Caesar Salad", category: "veggie_salads", price: 140, desc: "Crisp romaine, toasted croutons, parmesan & light vinaigrette", icon: "🥗", tag: "Classic" },
+
+      // 04. FRESH JUICES (9 Items)
+      { id: "fj1", name: "Mosambi Juice", category: "fresh_juices", price: 70, desc: "100% cold-pressed sweet lime with a dash of black salt", icon: "🍋", tag: "Raipur Favorite" },
+      { id: "fj2", name: "Orange Juice", category: "fresh_juices", price: 80, desc: "Freshly extracted Nagpur oranges, bursting with Vitamin C", icon: "🍊", tag: "Pure Citrus" },
+      { id: "fj3", name: "Watermelon Juice", category: "fresh_juices", price: 70, desc: "Hydrating, chilled watermelon nectar, zero added water", icon: "🍉", tag: "Pure Hydration" },
+      { id: "fj4", name: "ABC Juice", category: "fresh_juices", price: 110, desc: "Apple, Beetroot, Carrot - Raipur's favorite detox elixir", icon: "🍎", tag: "Skin Glow" },
+      { id: "fj5", name: "Pineapple Juice", category: "fresh_juices", price: 80, desc: "Tangy Queen pineapple cold-pressed fresh on order", icon: "🍍", tag: "Digestive" },
+      { id: "fj6", name: "Pomegranate Juice", category: "fresh_juices", price: 110, desc: "Pure extracted ruby red anar seeds, antioxidant powerhouse", icon: "🍷", tag: "Iron Boost" },
+      { id: "fj7", name: "Green Detox Juice", category: "fresh_juices", price: 100, desc: "Spinach, cucumber, green apple, celery & ginger zest", icon: "🥬", tag: "Cleanse" },
+      { id: "fj8", name: "Lemonade", category: "fresh_juices", price: 50, desc: "Fresh squeezed lemon with mint & roasted cumin rock salt", icon: "🍋", tag: "Cooling" },
+      { id: "fj9", name: "Sugarcane Juice", category: "fresh_juices", price: 50, desc: "Hygienically crushed sugarcane with ginger, lemon & mint", icon: "🎋", tag: "Instant Energy" },
+
+      // 05. COOLERS (4 Items)
+      { id: "c1", name: "Virgin Mojito", category: "coolers", price: 90, desc: "Crushed fresh garden mint, lime wedges, sparkling cooler", icon: "🍃", tag: "Refreshing" },
+      { id: "c2", name: "Watermelon Mint Cooler", category: "coolers", price: 90, desc: "Muddled fresh watermelon, cooling mint & crushed RO ice", icon: "🍉", tag: "Chilled" },
+      { id: "c3", name: "Lemon Mint Cooler", category: "coolers", price: 80, desc: "Zesty lemon extract, fresh pudina crush & chilled soda", icon: "🍋", tag: "Thirst Quencher" },
+      { id: "c4", name: "Pineapple Mint Cooler", category: "coolers", price: 90, desc: "Cold pineapple juice stirred with hand-crushed mint leaves", icon: "🍍", tag: "Tropical" }
+    ];
+
+    // ------------------------------------------------------------
+    // STATE STORE
+    // ------------------------------------------------------------
+    let currentCategory = "all";
+    let searchQuery = "";
+    let orderType = "Takeaway";
+    let cart = {}; // key: item.id -> quantity
+
+    // ------------------------------------------------------------
+    // INITIALIZATION
+    // ------------------------------------------------------------
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCategoryPills();
+      renderMenu();
+      updateCartUI();
+    });
+
+    // ------------------------------------------------------------
+    // CATEGORY PILLS RENDERING
+    // ------------------------------------------------------------
+    function renderCategoryPills() {
+      const container = document.getElementById("category-pills");
+      container.innerHTML = CATEGORIES.map(cat => {
+        const isActive = cat.id === currentCategory;
+        const activeClass = isActive
+          ? "bg-brand-orange text-white shadow-md shadow-orange-500/20 border-brand-orange"
+          : "bg-white text-stone-700 hover:bg-stone-50 border-stone-200/80";
+
+        return `
+          <button 
+            onclick="setCategory('${cat.id}')"
+            class="flex items-center gap-1.5 px-3.5 py-2 rounded-2xl text-xs sm:text-sm font-bold border transition-all whitespace-nowrap ${activeClass}"
+          >
+            <span>${cat.emoji}</span>
+            <span>${cat.name}</span>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function setCategory(categoryId) {
+      currentCategory = categoryId;
+      renderCategoryPills();
+
+      const categoryObj = CATEGORIES.find(c => c.id === categoryId);
+      document.getElementById("active-category-title").textContent = categoryObj ? categoryObj.name : "All Offerings";
+
+      renderMenu();
+    }
+
+    function handleSearch(query) {
+      searchQuery = query.toLowerCase().trim();
+      renderMenu();
+    }
+
+    function resetFilters() {
+      currentCategory = "all";
+      searchQuery = "";
+      document.getElementById("search-input").value = "";
+      renderCategoryPills();
+      renderMenu();
+    }
+
+    // ------------------------------------------------------------
+    // MENU RENDERING ENGINE (DRIBBBLE BAC NGUYEN AESTHETIC)
+    // ------------------------------------------------------------
+    function renderMenu() {
+      const grid = document.getElementById("product-grid");
+      const emptyState = document.getElementById("empty-state");
+
+      // Filter logic
+      const filtered = MENU_DATA.filter(item => {
+        const matchesCat = currentCategory === "all" || item.category === currentCategory;
+        const matchesSearch = !searchQuery ||
+          item.name.toLowerCase().includes(searchQuery) ||
+          item.desc.toLowerCase().includes(searchQuery) ||
+          item.tag.toLowerCase().includes(searchQuery);
+        return matchesCat && matchesSearch;
+      });
+
+      document.getElementById("items-counter").textContent = `${filtered.length} Items`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        emptyState.classList.remove("hidden");
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+
+      grid.innerHTML = filtered.map(item => {
+        const catInfo = CATEGORIES.find(c => c.id === item.category) || CATEGORIES[1];
+        const qty = cart[item.id] || 0;
+
+        return `
+          <div class="group bg-white rounded-3xl p-3 sm:p-4 border border-stone-100/90 shadow-organic hover:shadow-organic-hover transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+            
+            <!-- Category Accent Top Bar (Subtle Tint) -->
+            <div class="h-1.5 w-full rounded-full mb-3" style="background-color: ${catInfo.badgeBg};"></div>
+
+            <!-- Top Visual Area: Icon/Badge -->
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="text-2xl sm:text-3xl filter drop-shadow-sm">${item.icon}</span>
+                <span class="text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full" style="background-color: ${catInfo.badgeBg}; color: ${catInfo.badgeText}; border: 1px solid ${catInfo.border};">
+                  ${item.tag}
+                </span>
+              </div>
+
+              <!-- Title & Description -->
+              <h3 class="font-extrabold text-stone-900 text-sm sm:text-base leading-snug mb-1 group-hover:text-brand-orange transition-colors">
+                ${item.name}
+              </h3>
+              <p class="text-stone-500 text-[11px] sm:text-xs leading-relaxed font-medium line-clamp-2 mb-3">
+                ${item.desc}
+              </p>
+            </div>
+
+            <!-- Bottom Price & Stepper CTA -->
+            <div class="pt-2 border-t border-stone-100 flex items-center justify-between mt-auto">
+              <div>
+                <span class="text-[10px] text-stone-400 font-bold block leading-none">PRICE</span>
+                <span class="text-base sm:text-lg font-extrabold text-stone-900">₹${item.price}</span>
+              </div>
+
+              <!-- Interactive Stepper Button -->
+              <div id="btn-container-${item.id}">
+                ${renderItemButton(item.id, qty)}
+              </div>
+            </div>
+
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderItemButton(itemId, qty) {
+      if (qty <= 0) {
+        return `
+          <button 
+            onclick="updateItemQty('${itemId}', 1)"
+            class="bg-brand-orange hover:bg-brand-orange-dark text-white font-extrabold text-xs sm:text-sm px-3.5 py-1.5 rounded-2xl shadow-sm transition-all transform active:scale-95 flex items-center gap-1"
+          >
+            <span>+</span>
+            <span>Add</span>
+          </button>
+        `;
+      }
+
+      return `
+        <div class="flex items-center gap-1.5 bg-stone-100 border border-stone-200/80 rounded-2xl p-1 shadow-inner">
+          <button 
+            onclick="updateItemQty('${itemId}', ${qty - 1})"
+            class="w-6 h-6 rounded-xl bg-white text-stone-700 hover:bg-stone-200 font-extrabold text-xs flex items-center justify-center transition-colors shadow-xs"
+          >
+            -
+          </button>
+          <span class="text-xs font-extrabold text-stone-900 w-4 text-center">${qty}</span>
+          <button 
+            onclick="updateItemQty('${itemId}', ${qty + 1})"
+            class="w-6 h-6 rounded-xl bg-brand-orange text-white hover:bg-brand-orange-dark font-extrabold text-xs flex items-center justify-center transition-colors shadow-xs"
+          >
+            +
+          </button>
+        </div>
+      `;
+    }
+
+    // ------------------------------------------------------------
+    // CART STATE MUTATIONS
+    // ------------------------------------------------------------
+    function updateItemQty(itemId, newQty) {
+      const item = MENU_DATA.find(i => i.id === itemId);
+      if (!item) return;
+
+      if (newQty <= 0) {
+        delete cart[itemId];
+        showToast(`Removed ${item.name}`, "🗑️");
+      } else {
+        const isAdding = !cart[itemId] || newQty > cart[itemId];
+        cart[itemId] = newQty;
+        if (isAdding) {
+          showToast(`Added ${item.name} (${newQty})`, "✨");
+        }
+      }
+
+      // Update the specific button in DOM without re-rendering entire grid
+      const btnContainer = document.getElementById(`btn-container-${itemId}`);
+      if (btnContainer) {
+        btnContainer.innerHTML = renderItemButton(itemId, cart[itemId] || 0);
+      }
+
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const entries = Object.entries(cart);
+      const totalCount = entries.reduce((sum, [, qty]) => sum + qty, 0);
+      const totalPrice = entries.reduce((sum, [id, qty]) => {
+        const item = MENU_DATA.find(i => i.id === id);
+        return sum + (item ? item.price * qty : 0);
+      }, 0);
+
+      // 1. Header Badge
+      document.getElementById("header-cart-badge").textContent = totalCount;
+
+      // 2. Floating Cart Bar
+      const floatingBar = document.getElementById("floating-cart-bar");
+      if (totalCount > 0) {
+        floatingBar.classList.remove("translate-y-32", "opacity-0");
+        document.getElementById("floating-cart-count").textContent = totalCount;
+        document.getElementById("floating-cart-total").textContent = `₹${totalPrice}`;
+      } else {
+        floatingBar.classList.add("translate-y-32", "opacity-0");
+      }
+
+      // 3. Drawer Breakdown
+      document.getElementById("drawer-subtotal").textContent = `₹${totalPrice}`;
+      document.getElementById("drawer-grandtotal").textContent = `₹${totalPrice}`;
+
+      // 4. Drawer Items Content
+      renderDrawerItems();
+    }
+
+    function renderDrawerItems() {
+      const container = document.getElementById("cart-items-container");
+      const entries = Object.entries(cart);
+
+      if (entries.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-stone-400">
+            <div class="text-4xl mb-2">🧺</div>
+            <p class="text-xs font-bold text-stone-600">Your cart is currently empty</p>
+            <p class="text-[11px] text-stone-400">Add fresh juices, shakes, or salads to order!</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = entries.map(([id, qty]) => {
+        const item = MENU_DATA.find(i => i.id === id);
+        if (!item) return "";
+
+        return `
+          <div class="flex items-center justify-between p-3 bg-white rounded-2xl border border-stone-200/70 shadow-xs">
+            <div class="flex items-center gap-2.5">
+              <span class="text-xl">${item.icon}</span>
+              <div>
+                <h4 class="text-xs sm:text-sm font-extrabold text-stone-900">${item.name}</h4>
+                <span class="text-xs font-bold text-brand-orange">₹${item.price * qty} <span class="text-[10px] text-stone-400 font-medium">(₹${item.price} each)</span></span>
+              </div>
+            </div>
+
+            <!-- Drawer Stepper -->
+            <div class="flex items-center gap-1 bg-stone-100 border border-stone-200/80 rounded-xl p-1">
+              <button onclick="updateItemQty('${item.id}', ${qty - 1})" class="w-5 h-5 rounded-lg bg-white text-stone-700 font-bold text-xs flex items-center justify-center shadow-xs">-</button>
+              <span class="text-xs font-extrabold text-stone-900 w-4 text-center">${qty}</span>
+              <button onclick="updateItemQty('${item.id}', ${qty + 1})" class="w-5 h-5 rounded-lg bg-brand-orange text-white font-bold text-xs flex items-center justify-center shadow-xs">+</button>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // ------------------------------------------------------------
+    // DRAWER TOGGLE & ORDER TYPE
+    // ------------------------------------------------------------
+    function toggleCartDrawer(open) {
+      const backdrop = document.getElementById("cart-drawer-backdrop");
+      const drawer = document.getElementById("cart-drawer");
+
+      if (open) {
+        backdrop.classList.remove("opacity-0", "pointer-events-none");
+        drawer.classList.remove("translate-y-full", "sm:translate-x-full");
+      } else {
+        backdrop.classList.add("opacity-0", "pointer-events-none");
+        drawer.classList.add("translate-y-full", "sm:translate-x-full");
+      }
+    }
+
+    function setOrderType(type) {
+      orderType = type;
+
+      const buttons = {
+        'Takeaway': document.getElementById("type-takeaway"),
+        'Dine-in': document.getElementById("type-dinein"),
+        'Stall Pickup': document.getElementById("type-pickup")
+      };
+
+      Object.entries(buttons).forEach(([key, btn]) => {
+        if (key === type) {
+          btn.className = "order-type-btn py-2 text-xs font-bold rounded-xl border border-brand-orange bg-brand-orange text-white shadow-xs";
+        } else {
+          btn.className = "order-type-btn py-2 text-xs font-bold rounded-xl border border-stone-200 bg-white text-stone-700 hover:bg-stone-100";
+        }
+      });
+    }
+
+    // ------------------------------------------------------------
+    // WHATSAPP URL GENERATOR & CHECKOUT
+    // ------------------------------------------------------------
+    function sendWhatsAppOrder() {
+      const entries = Object.entries(cart);
+      if (entries.length === 0) {
+        showToast("Please add at least 1 item to order!", "⚠️");
+        return;
+      }
+
+      let totalPrice = 0;
+      let itemsListText = "";
+
+      entries.forEach(([id, qty]) => {
+        const item = MENU_DATA.find(i => i.id === id);
+        if (item) {
+          const itemTotal = item.price * qty;
+          totalPrice += itemTotal;
+          itemsListText += `• ${qty}x ${item.name} (₹${itemTotal})\n`;
+        }
+      });
+
+      const notes = document.getElementById("order-notes").value.trim();
+      const notesLine = notes ? `*Special Note:* ${notes}` : `*Special Note:* None`;
+
+      // Build structured message template
+      const message =
+        `*NEW ORDER - RAW & REAL RAIPUR* 🍹
+-----------------------------------
+${itemsListText}-----------------------------------
+*Total Bill:* ₹${totalPrice}
+*Order Type:* ${orderType}
+${notesLine}
+-----------------------------------
+_Sent from Raw & Real Web Menu_`;
+
+      const encodedUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+      window.open(encodedUrl, "_blank");
+    }
+
+    function handleHeroWhatsAppClick() {
+      const totalCount = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+      if (totalCount > 0) {
+        toggleCartDrawer(true);
+      } else {
+        toggleSelectItemDialog(true);
+      }
+    }
+
+    function toggleSelectItemDialog(open) {
+      const backdrop = document.getElementById("select-item-dialog-backdrop");
+      const dialog = document.getElementById("select-item-dialog");
+
+      if (open) {
+        backdrop.classList.remove("opacity-0", "pointer-events-none");
+        dialog.classList.remove("scale-95");
+        dialog.classList.add("scale-100");
+      } else {
+        backdrop.classList.add("opacity-0", "pointer-events-none");
+        dialog.classList.remove("scale-100");
+        dialog.classList.add("scale-95");
+      }
+    }
+
+    function scrollToMenuFromDialog() {
+      toggleSelectItemDialog(false);
+      const menuElement = document.getElementById("menu-tabs");
+      if (menuElement) {
+        menuElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    function directWhatsAppInquiry() {
+      const greeting = "Hello Raw & Real Raipur! 🍊 I would like to place an order / check today's fresh menu.";
+      window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(greeting)}`, "_blank");
+    }
+
+    // ------------------------------------------------------------
+    // TOAST NOTIFICATIONS
+    // ------------------------------------------------------------
+    let toastTimeout;
+    function showToast(message, icon = "✨") {
+      const toast = document.getElementById("toast");
+      document.getElementById("toast-message").textContent = message;
+      document.getElementById("toast-icon").textContent = icon;
+
+      toast.classList.remove("-translate-y-20", "opacity-0");
+      toast.classList.add("translate-y-0", "opacity-100");
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add("-translate-y-20", "opacity-0");
+        toast.classList.remove("translate-y-0", "opacity-100");
+      }, 2200);
+    }
+  </script>
+</body>
+
+</html>
